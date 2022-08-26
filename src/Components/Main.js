@@ -1,13 +1,21 @@
-import React from 'react'
-import HornedBeast from './HornedBeast';
+import React from "react";
+import HornedBeast from "./HornedBeast";
+import Data from "./Data";
 
+let card = Data.map((val) => {
+  return (
+    <HornedBeast key={val._id} title={val.title} img={val.image_url} des={val.description} />
+  );
+});
 
-
-class Main extends React.Component{
-    render(){
-        return(
-        <HornedBeast title="HornedBeast1" img_url='https://live.staticflickr.com/4083/4971891274_2091d5c8a2_c.jpg' description="this is our first HornedBeast"/>
-  ) }
+class Main extends React.Component {
+  render() {
+    return (
+      <>
+        <div class="wrapimg">{card}</div>
+      </>
+    );
+  }
 }
 
 export default Main;

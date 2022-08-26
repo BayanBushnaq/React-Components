@@ -5,9 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.horned{
+  text-align: center;
+  color:darkblue;
+  text-shadow: 3px 3px black;
+}
+
+Card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+
+
